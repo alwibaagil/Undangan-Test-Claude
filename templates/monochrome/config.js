@@ -13,60 +13,60 @@
     },
     defaultData: {
       title: "Pernikahan",
-      introText: "Kami mengundang kehadiran Anda",
+      introText: "Dengan hormat kami mengundang",
       openingLine: "Bismillahirrahmanirrahim",
       nameFont: "'Cormorant Garamond', serif",
       accentFont: "'Great Vibes', cursive",
       bodyFont: "'Inter', sans-serif",
-      groomShort: "Adi",
-      brideShort: "Rara",
-      groomFull: "Adi Pratama",
-      brideFull: "Rara Aulia",
+      groomShort: "Raka",
+      brideShort: "Nadira",
+      groomFull: "Raka Dharanugraha",
+      brideFull: "Nadira Putri Maharani",
       groomPhoto: "",
       bridePhoto: "",
-      groomParents: "Putra pertama dari Bapak Hendra dan Ibu Sari",
-      brideParents: "Putri pertama dari Bapak Ridwan dan Ibu Dewi",
+      groomParents: "Putra pertama dari Bapak Wiranto & Ibu Ratna",
+      brideParents: "Putri pertama dari Bapak Hakim & Ibu Sinta",
       eventDate: "2026-07-12T08:00:00+07:00",
       displayDate: "Minggu, 12 Juli 2026",
-      guestName: "Budi dan Ani",
-      quoteText: "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan agar kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.",
-      quoteSource: "QS. Ar-Rum : 21",
+      guestName: "Bapak/Ibu/Saudara/i",
+      quoteText: " Maha Luhur Ayat-Nya jika Dia menghendaki sesuatu Dia hanya berkata kepadanya 'Jadilah', maka jadilah sesuatu itu.",
+      quoteSource: "QS. Yasin : 82",
       story: [
         {
-          year: "2020",
+          year: "2023",
           title: "Pertemuan Pertama",
-          text: "Takdir mempertemukan kami di sebuah acara sederhana. Percakapan ringan dan senyum yang tulus menjadi awal dari perjalanan ini."
+          text: "Di sebuah sore yang tenang, takdir mempertemukan kami. Senyum pertama yang saling diberikan menjadi awal dari segalanya."
         },
         {
           year: "2024",
           title: "Lamaran",
-          text: "Dengan restu keluarga, kami melangkah lebih serius dan mengikat janji untuk membangun masa depan bersama."
+          text: "Dengan restu kedua orang tua, kami resmi melangkah menuju fase baru kehidupan."
         },
         {
           year: "2026",
-          title: "Menuju Halal",
-          text: "Kami mengundang Bapak / Ibu / Saudara/i untuk hadir dan mendoakan langkah suci kami."
+          title: "Menuju Hari Bahagia",
+          text: "Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir dan memberikan doa restu dalam prosesi pernikahan kami."
         }
       ],
       events: [
         {
-          type: "Prosesi Pertama",
+          type: "Prosesi Sakral",
           title: "Akad Nikah",
           date: "Minggu, 12 Juli 2026",
           time: "08.00 - 10.00 WIB",
-          venue: "Masjid Al-Ikhlas\nJl. Merdeka No. 1, Bandung"
+          venue: "Masjid Jami' Al-Mubarak\nJl. Sudirman No. 88, Jakarta Selatan"
         },
         {
-          type: "Prosesi Kedua",
+          type: "Prosesi Perayaan",
           title: "Resepsi Pernikahan",
           date: "Minggu, 12 Juli 2026",
-          time: "11.00 - 15.00 WIB",
-          venue: "The Grand Ballroom\nJl. Asia Afrika No. 10, Bandung"
+          time: "11.00 - 16.00 WIB",
+          venue: "Grand Ballroom Hotel Indonesia\nJl. Jend. Sudirman Kav. 52-53, Jakarta"
         }
       ],
       galleryPhotos: [],
-      closingText: "Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak / Ibu / Saudara/i berkenan hadir untuk memberikan doa restu.",
-      closingFamily: "Beserta keluarga besar"
+      closingText: "Kehadiran Anda merupakan kehormatan besar bagi kami. Terima kasih atas doa dan restu yang telah diberikan.",
+      closingFamily: "Hormat kami, Keluarga Besar"
     }
   };
 })();

@@ -1,22 +1,19 @@
 :root {
   --page-bg: #0a0a0a;
   --paper: #ffffff;
-  --paper-soft: #f7f7f5;
-  --ink: #111111;
-  --ink-soft: #2d2d2d;
-  --muted: #666666;
-  --line: #e0e0dc;
-  --mist: #f5f5f2;
-  --pearl: #e8e8e4;
-  --silver: #c4c4be;
-  --ash: #8a8a82;
-  --graphite: #1a1a1a;
-  --gold: #c9a962;
-  --gold-light: #e8d5a3;
-  --soft-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
-  --shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
-  --glow-gold: 0 0 40px rgba(201, 169, 98, 0.25);
-  --glow-soft: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --paper-soft: #f5f5f5;
+  --ink: #1a1a1a;
+  --ink-soft: #3d3d3d;
+  --muted: #888888;
+  --line: #d4d4d4;
+  --mist: #f0f0f0;
+  --pearl: #e8e8e8;
+  --silver: #b8b8b8;
+  --ash: #6a6a6a;
+  --graphite: #2a2a2a;
+  --soft-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  --shadow: 0 30px 90px rgba(0, 0, 0, 0.25);
+  --glow-soft: 0 10px 40px rgba(0, 0, 0, 0.1);
   --name-font: "Cormorant Garamond", serif;
   --accent-font: "Great Vibes", cursive;
   --body-font: "Inter", sans-serif;
@@ -522,12 +519,12 @@ a {
 
 .intro-overlay p {
   margin: 0;
-  color: var(--gold-light);
+  color: var(--silver);
   font-family: var(--name-font);
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
-  text-shadow: 0 0 20px rgba(201, 169, 98, 0.4);
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
   animation: introP 3.8s ease forwards;
 }
 
@@ -546,7 +543,7 @@ a {
   color: #ffffff;
   line-height: 1;
   text-shadow:
-    0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2),
     0 20px 60px rgba(0, 0, 0, 0.5);
   animation: introName 4s ease forwards;
 }
@@ -554,8 +551,8 @@ a {
 .intro-overlay .intro-amp {
   font-family: var(--accent-font);
   font-size: clamp(32px, 10vw, 48px);
-  color: var(--gold);
-  text-shadow: 0 0 30px rgba(201, 169, 98, 0.6);
+  color: var(--silver);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   animation: introAmp 4s ease forwards;
 }
 
@@ -563,11 +560,10 @@ a {
   width: 150px;
   height: 2px;
   margin: 28px 0 20px;
-  background: linear-gradient(to right, transparent, var(--gold), rgba(255, 255, 255, 0.8), var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--silver), #ffffff, var(--silver), transparent);
   transform: scaleX(0);
   transform-origin: center;
   animation: introLine 4.2s ease forwards;
-  box-shadow: 0 0 10px rgba(201, 169, 98, 0.5);
 }
 
 .intro-overlay small {
@@ -799,17 +795,11 @@ a {
   position: absolute;
   width: 240px;
   height: 240px;
-  border: 1px solid rgba(201, 169, 98, 0.3);
+  border: 1px solid rgba(180, 180, 180, 0.25);
   border-radius: 999px;
   box-shadow:
-    inset 0 0 30px rgba(201, 169, 98, 0.1),
-    0 0 20px rgba(201, 169, 98, 0.15);
-}
-
-.echo-rings span:nth-child(2) {
-}
-
-.echo-rings span:nth-child(3) {
+    inset 0 0 30px rgba(150, 150, 150, 0.08),
+    0 0 20px rgba(100, 100, 100, 0.1);
 }
 
 @keyframes echoPulse {
@@ -845,9 +835,9 @@ a {
   background: linear-gradient(
     105deg,
     transparent 20%,
-    rgba(201, 169, 98, 0.1) 40%,
+    rgba(180, 180, 180, 0.1) 40%,
     rgba(255, 255, 255, 0.15) 50%,
-    rgba(201, 169, 98, 0.1) 60%,
+    rgba(180, 180, 180, 0.1) 60%,
     transparent 80%
   );
   background-size: 200% 100%;
@@ -922,7 +912,7 @@ a {
   width: 130px;
   height: 2px;
   margin: 18px auto 0;
-  background: linear-gradient(to right, transparent, var(--gold), var(--ink), var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--silver), var(--ink), var(--silver), transparent);
   content: "";
   transform-origin: center;
   animation: lineGrow 1.2s ease both;
@@ -991,11 +981,11 @@ a {
   display: grid;
   gap: 6px;
   margin: 0 0 18px;
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  border: 1px solid rgba(180, 180, 180, 0.3);
   border-radius: 12px;
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.72), rgba(245, 245, 240, 0.55)),
-    linear-gradient(180deg, rgba(201, 169, 98, 0.05), transparent);
+    linear-gradient(180deg, rgba(100, 100, 100, 0.03), transparent);
   padding: 14px 20px;
   font-family: var(--name-font);
   box-shadow:
@@ -1032,7 +1022,7 @@ a {
   transform: translateX(-50%);
   width: 60%;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--silver), transparent);
   border-radius: 2px;
 }
 
@@ -1082,7 +1072,6 @@ a {
   transform: translateY(-4px) scale(1.05);
   box-shadow:
     0 24px 50px rgba(0, 0, 0, 0.4),
-    0 0 40px rgba(201, 169, 98, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
@@ -1308,7 +1297,7 @@ a {
 
 .story-card strong {
   display: block;
-  color: var(--gold);
+  color: var(--silver);
   font-family: var(--name-font);
   font-size: 52px;
   line-height: 0.9;
@@ -1638,13 +1627,13 @@ a {
     box-shadow:
       0 18px 38px rgba(0, 0, 0, 0.12),
       inset 0 0 0 7px rgba(255, 255, 255, 0.7),
-      0 0 20px rgba(201, 169, 98, 0.1);
+      0 0 20px rgba(180, 180, 180, 0.1);
   }
   50% {
     box-shadow:
       0 22px 46px rgba(0, 0, 0, 0.18),
       inset 0 0 0 5px rgba(255, 255, 255, 0.9),
-      0 0 35px rgba(201, 169, 98, 0.2);
+      0 0 35px rgba(180, 180, 180, 0.2);
   }
 }
 
@@ -1970,14 +1959,14 @@ a {
 .gallery-item::after {
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  border: 1px solid rgba(180, 180, 180, 0.2);
   content: "";
   pointer-events: none;
   transition: border-color 0.4s ease;
 }
 
 .gallery-item:hover::after {
-  border-color: rgba(201, 169, 98, 0.5);
+  border-color: rgba(180, 180, 180, 0.5);
 }
 
 .gallery-item.has-photo img {
@@ -2059,7 +2048,7 @@ a {
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: linear-gradient(to right, transparent, var(--gold), var(--ink), var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--silver), var(--ink), var(--silver), transparent);
   content: "";
   opacity: 0.7;
 }
@@ -2072,7 +2061,7 @@ a {
   place-items: center;
   overflow: hidden;
   margin: 0 auto 18px;
-  border: 2px solid var(--gold);
+  border: 2px solid var(--silver);
   border-radius: 999px;
   background:
     linear-gradient(135deg, #ffffff, #e0e0dc);
@@ -2082,7 +2071,7 @@ a {
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.12),
     inset 0 0 0 6px rgba(255, 255, 255, 0.7),
-    0 0 25px rgba(201, 169, 98, 0.15);
+    0 0 25px rgba(180, 180, 180, 0.15);
   
   transition: transform 0.3s ease;
 }
@@ -2114,7 +2103,7 @@ a {
 
 .person-card p {
   margin: 0;
-  color: var(--gold);
+  color: var(--silver);
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -2128,13 +2117,13 @@ a {
 }
 
 .couple-and {
-  color: var(--gold);
+  color: var(--silver);
   font-family: var(--accent-font);
   font-size: 62px;
   line-height: 1;
   text-shadow:
     0 14px 32px rgba(0, 0, 0, 0.12),
-    0 0 20px rgba(201, 169, 98, 0.2);
+    0 0 20px rgba(180, 180, 180, 0.2);
   
 }
 
@@ -2158,7 +2147,7 @@ a {
 .quote-section cite {
   display: block;
   margin-top: 20px;
-  color: var(--gold);
+  color: var(--silver);
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
@@ -2169,7 +2158,7 @@ a {
   width: 140px;
   height: 2px;
   margin: 0 auto 30px;
-  background: linear-gradient(to right, transparent, var(--gold), var(--ink), var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--silver), var(--ink), var(--silver), transparent);
   
 }
 
@@ -2192,7 +2181,7 @@ a {
 }
 
 .closing-section small {
-  color: var(--gold);
+  color: var(--silver);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -2209,7 +2198,7 @@ a {
 /* Enhanced Story Section */
 .story-card strong {
   display: block;
-  color: var(--gold);
+  color: var(--silver);
   font-family: var(--name-font);
   font-size: 52px;
   line-height: 0.9;
