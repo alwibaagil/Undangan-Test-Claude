@@ -12,8 +12,8 @@
       flowerRight: "assets/images/monochrome-flowers-right.png"
     },
     defaultData: {
-      title: "Pernikahan",
-      introText: "Dengan hormat kami mengundang",
+      title: "The Wedding",
+      introText: "Dengan penuh kebahagiaan kami menyampaikan",
       openingLine: "Bismillahirrahmanirrahim",
       nameFont: "'Cormorant Garamond', serif",
       accentFont: "'Great Vibes', cursive",
@@ -24,49 +24,49 @@
       brideFull: "Nadira Putri Maharani",
       groomPhoto: "",
       bridePhoto: "",
-      groomParents: "Putra pertama dari Bapak Wiranto & Ibu Ratna",
-      brideParents: "Putri pertama dari Bapak Hakim & Ibu Sinta",
+      groomParents: "Putra pertama dari Bapak Wiranto Adinegoro& Ibu Ratna Sari",
+      brideParents: "Putri pertama dari Bapak Hakim Wijaya & Ibu Sinta Dewi",
       eventDate: "2026-07-12T08:00:00+07:00",
-      displayDate: "Minggu, 12 Juli 2026",
+      displayDate: "Sunday, 12 July 2026",
       guestName: "Bapak/Ibu/Saudara/i",
-      quoteText: " Maha Luhur Ayat-Nya jika Dia menghendaki sesuatu Dia hanya berkata kepadanya 'Jadilah', maka jadilah sesuatu itu.",
-      quoteSource: "QS. Yasin : 82",
+      quoteText: "Di antara keajaiban cinta adalah kemampuannya mengubah dua陌生人 menjadi keluarga, dua hati menjadi satu, dan dua jalan menjadi satu perjalanan panjang menuju kebaikan.",
+      quoteSource: "Kahlil Gibran",
       story: [
         {
           year: "2023",
-          title: "Pertemuan Pertama",
-          text: "Di sebuah sore yang tenang, takdir mempertemukan kami. Senyum pertama yang saling diberikan menjadi awal dari segalanya."
+          title: "First Encounter",
+          text: "Di sebuah sore yang tenang di kedai kopi favorit, takdir mempertemukan kami. Senyum pertama yang saling diberikan menjadi awal dari segalanya."
         },
         {
           year: "2024",
-          title: "Lamaran",
-          text: "Dengan restu kedua orang tua, kami resmi melangkah menuju fase baru kehidupan."
+          title: "The Promise",
+          text: "Dengan restu dan berkat dari kedua orang tua, kami resmi melangkah menuju fase baru kehidupan yang penuh harapan dan cinta."
         },
         {
           year: "2026",
-          title: "Menuju Hari Bahagia",
-          text: "Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir dan memberikan doa restu dalam prosesi pernikahan kami."
+          title: "Our Special Day",
+          text: "Dengan segala kerendahan hati, kami mengundang Anda untuk hadir dan memberikan doa restu dalam prosesi pernikahan kami yang sakral."
         }
       ],
       events: [
         {
-          type: "Prosesi Sakral",
+          type: "Sacred Ceremony",
           title: "Akad Nikah",
-          date: "Minggu, 12 Juli 2026",
-          time: "08.00 - 10.00 WIB",
-          venue: "Masjid Jami' Al-Mubarak\nJl. Sudirman No. 88, Jakarta Selatan"
+          date: "Sunday, 12 July 2026",
+          time: "08:00 - 10:00 WIB",
+          venue: "Masjid Jami' Al-Mubarak\nJl. Sudirman No. 88, Jakarta Selatan 12190"
         },
         {
-          type: "Prosesi Perayaan",
+          type: "Wedding Reception",
           title: "Resepsi Pernikahan",
-          date: "Minggu, 12 Juli 2026",
-          time: "11.00 - 16.00 WIB",
-          venue: "Grand Ballroom Hotel Indonesia\nJl. Jend. Sudirman Kav. 52-53, Jakarta"
+          date: "Sunday, 12 July 2026",
+          time: "11:00 - 16:00 WIB",
+          venue: "Grand Ballroom Hotel Indonesia\nJl. Jend. Sudirman Kav. 52-53, Jakarta 10220"
         }
       ],
       galleryPhotos: [],
-      closingText: "Kehadiran Anda merupakan kehormatan besar bagi kami. Terima kasih atas doa dan restu yang telah diberikan.",
-      closingFamily: "Hormat kami, Keluarga Besar"
+      closingText: "Kehadiran Anda merupakan kehormatan besar bagi kami. Terima kasih atas doa, waktu, dan kasih sayang yang telah Anda berikan selama ini.",
+      closingFamily: "Dengan penuh cinta,\nKeluarga Besar Dharanugraha & Keluarga Besar Wijaya"
     }
   };
 })();

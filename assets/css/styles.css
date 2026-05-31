@@ -1199,61 +1199,111 @@ a {
 }
 
 .invite-heading {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
 .invite-heading p {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: var(--ash);
   font-family: var(--accent-font);
-  font-size: 28px;
-  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  font-size: 26px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .invite-heading h2 {
   margin: 0;
   font-family: var(--name-font);
-  font-size: 34px;
-  line-height: 1.05;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 1px;
 }
 
 .ornament-line {
-  width: 120px;
+  width: 100px;
   height: 1px;
-  margin: 0 auto 26px;
+  margin: 0 auto 28px;
   background: linear-gradient(to right, transparent, var(--silver), var(--ink), var(--silver), transparent);
-  
 }
 
 .quote-section {
+  position: relative;
   background:
-    linear-gradient(180deg, #ffffff 0%, #f1f1ee 100%);
+    linear-gradient(180deg, #ffffff 0%, #f8f8f8 50%, #f0f0f0 100%);
   text-align: center;
+  padding: 100px 24px;
+}
+
+.quote-section::before,
+.quote-section::after {
+  content: '"';
+  position: absolute;
+  font-family: var(--accent-font);
+  font-size: 120px;
+  color: var(--line);
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.quote-section::before {
+  top: 20px;
+  left: 30px;
+}
+
+.quote-section::after {
+  bottom: 20px;
+  right: 30px;
 }
 
 .quote-section blockquote {
   margin: 0;
   font-family: var(--name-font);
-  font-size: 22px;
+  font-size: 20px;
   font-style: italic;
-  line-height: 1.75;
+  line-height: 1.9;
+  color: var(--ink-soft);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .quote-section cite {
   display: block;
-  margin-top: 18px;
-  color: var(--muted);
+  margin-top: 24px;
+  color: var(--ash);
   font-size: 13px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .story-list,
 .couple-list,
 .event-list {
   display: grid;
-  gap: 16px;
+  gap: 20px;
+}
+
+.story-card,
+.person-card,
+.event-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    linear-gradient(155deg, rgba(255, 255, 255, 0.98), rgba(248, 248, 248, 0.78));
+  padding: 28px 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-card:hover,
+.person-card:hover,
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .story-card::before,
@@ -1261,10 +1311,10 @@ a {
 .event-card::before {
   position: absolute;
   inset: 0 0 auto;
-  height: 3px;
-  background: linear-gradient(to right, transparent, var(--ash), var(--ink), var(--ash), transparent);
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--silver), var(--ink), var(--silver), transparent);
   content: "";
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .reveal.in-view .story-card,
@@ -1299,9 +1349,11 @@ a {
   display: block;
   color: var(--silver);
   font-family: var(--name-font);
-  font-size: 52px;
+  font-size: 48px;
+  font-weight: 300;
   line-height: 0.9;
-  opacity: 0.35;
+  opacity: 0.25;
+  letter-spacing: 2px;
 }
 
 .story-card h3,
@@ -1309,9 +1361,11 @@ a {
 .event-card h3 {
   margin: 12px 0 0;
   font-family: var(--name-font);
-  font-size: 28px;
-  line-height: 1.1;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
   color: var(--ink);
+  letter-spacing: 1px;
 }
 
 .story-card p,
@@ -1320,7 +1374,7 @@ a {
 .closing-section p {
   color: var(--ink-soft);
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.9;
   white-space: pre-line;
 }
 
@@ -1330,22 +1384,21 @@ a {
 
 .person-avatar {
   display: grid;
-  width: 86px;
-  height: 86px;
+  width: 100px;
+  height: 100px;
   place-items: center;
   overflow: hidden;
-  margin: 0 auto 16px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 0 auto 20px;
+  border: 2px solid var(--line);
   border-radius: 999px;
   background:
-    linear-gradient(135deg, #ffffff, #d9d9d4);
+    linear-gradient(135deg, #ffffff, #e8e8e8);
   font-family: var(--name-font);
-  font-size: 36px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 600;
   box-shadow:
-    0 16px 34px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 7px rgba(255, 255, 255, 0.64);
-  
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 4px rgba(255, 255, 255, 0.9);
 }
 
 .person-avatar img {
@@ -1371,31 +1424,37 @@ a {
 
 .person-card p {
   margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 800;
+  color: var(--ash);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .person-card strong {
   display: block;
-  margin: 4px 0 12px;
-  font-size: 13px;
+  margin: 6px 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink-soft);
 }
 
 .couple-and {
   color: var(--graphite);
   font-family: var(--accent-font);
-  font-size: 58px;
+  font-size: 52px;
   line-height: 1;
-  text-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
-  
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
 }
 
 .event-card .event-type {
-  margin: 0 0 6px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
+  margin: 0 0 8px;
+  color: var(--ash);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .event-row {
@@ -1550,23 +1609,38 @@ a {
 }
 
 .closing-section {
+  position: relative;
   background:
-    linear-gradient(180deg, #f5f5f2 0%, #ffffff 54%, #ddddd8 100%);
+    linear-gradient(180deg, #f8f8f8 0%, #ffffff 50%, #f0f0f0 100%);
   text-align: center;
+  padding: 100px 24px;
 }
 
 .closing-section h2 {
-  margin: 24px 0 6px;
+  margin: 0 0 8px;
   font-family: var(--accent-font);
-  font-size: 54px;
+  font-size: 56px;
   font-weight: 400;
   line-height: 1;
+  color: var(--ink);
 }
 
 .closing-section small {
-  color: var(--muted);
+  display: block;
+  margin-top: 30px;
+  color: var(--ash);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.closing-section p {
+  max-width: 500px;
+  margin: 24px auto 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.9;
 }
 
 .reveal {
