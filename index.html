@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangin Digital - Undangan Pernikahan Online</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="templates/monochrome/config.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <main id="app">
+    <section id="landingView" class="landing-view">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Undangin Digital">
+          <span>UD</span>
+          <strong>Undangin Digital</strong>
+        </a>
+        <a class="header-link" href="#templates">Template</a>
+      </header>
+
+      <section id="home" class="landing-hero">
+        <img class="corner-flower home-flower home-flower-lb" data-static-flower="left" src="assets/images/monochrome-flowers-left.png" alt="" aria-hidden="true">
+        <img class="corner-flower home-flower home-flower-rt" data-static-flower="left" src="assets/images/monochrome-flowers-left.png" alt="" aria-hidden="true">
+        <img class="corner-flower home-flower home-flower-rb" data-static-flower="right" src="assets/images/monochrome-flowers-right.png" alt="" aria-hidden="true">
+        <img class="corner-flower home-flower home-flower-lt" data-static-flower="right" src="assets/images/monochrome-flowers-right.png" alt="" aria-hidden="true">
+
+        <div class="hero-copy">
+          <p class="eyebrow">Website undangan pernikahan online</p>
+          <h1>Undangin Digital</h1>
+          <p>Buat preview undangan, edit data mempelai, atur nama tamu dari link, lalu bagikan undangan digital yang siap dibuka dari layar mobile.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#templates">Pilih Template</a>
+            <button class="btn btn-light" type="button" data-select-template="monochrome">Lihat Preview</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-section" id="steps">
+        <div class="section-title">
+          <p class="eyebrow">Cara pembuatan</p>
+          <h2>Empat langkah sampai siap diedarkan</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="info-card">
+            <span>01</span>
+            <h3>Pilih Template</h3>
+            <p>Pilih tema undangan yang sesuai dengan konsep acara.</p>
+          </article>
+          <article class="info-card">
+            <span>02</span>
+            <h3>Isi Data</h3>
+            <p>Edit nama, tanggal, lokasi, foto, font, dan nama tamu.</p>
+          </article>
+          <article class="info-card">
+            <span>03</span>
+            <h3>Payment</h3>
+            <p>Lanjutkan pembayaran setelah preview undangan sudah sesuai.</p>
+          </article>
+          <article class="info-card">
+            <span>04</span>
+            <h3>Siap Diedarkan</h3>
+            <p>Bagikan link undangan dengan nama tamu yang berbeda.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="landing-section" id="templates">
+        <div class="section-title">
+          <p class="eyebrow">Pilihan template</p>
+          <h2>Template pertama: Monochrome Noir</h2>
+        </div>
+        <div id="templateGrid" class="template-grid" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section id="previewView" class="preview-view is-hidden" aria-label="Preview undangan">
+      <div id="previewToolbar" class="preview-toolbar">
+        <button id="backHomeBtn" class="toolbar-btn" type="button">Kembali</button>
+        <span id="toolbarTitle">Monochrome Noir</span>
+        <button id="openEditorBtn" class="toolbar-btn toolbar-primary" type="button">Edit Data</button>
+      </div>
+
+      <article id="invitePhone" class="invite-phone">
+        <div id="introOverlay" class="intro-overlay" aria-hidden="true">
+          <p data-text="openingLine">Bismillahirrahmanirrahim</p>
+          <div class="intro-names">
+            <span class="intro-name" data-text="groomShort">Adi</span>
+            <span class="intro-amp">&amp;</span>
+            <span class="intro-name" data-text="brideShort">Rara</span>
+          </div>
+          <i></i>
+          <small data-text="displayDate">Minggu, 12 Juli 2026</small>
+        </div>
+
+        <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+        <div class="petals" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span>
+        </div>
+
+        <section id="coverSection" class="invite-cover">
+          <img class="corner-flower invite-flower invite-flower-lb" data-flower="left" src="assets/images/monochrome-flowers-left.png" alt="" aria-hidden="true">
+          <img class="corner-flower invite-flower invite-flower-rt" data-flower="left" src="assets/images/monochrome-flowers-left.png" alt="" aria-hidden="true">
+          <img class="corner-flower invite-flower invite-flower-rb" data-flower="right" src="assets/images/monochrome-flowers-right.png" alt="" aria-hidden="true">
+          <img class="corner-flower invite-flower invite-flower-lt" data-flower="right" src="assets/images/monochrome-flowers-right.png" alt="" aria-hidden="true">
+
+          <div class="echo-rings" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="shimmer-overlay" aria-hidden="true"></div>
+
+          <div class="cover-content">
+            <p class="cover-invite" data-text="introText">Kami mengundang kehadiran Anda</p>
+            <p class="cover-title" data-text="title">Pernikahan</p>
+            <h1 class="cover-names"><span data-text="groomShort">Adi</span> <span>&amp;</span> <span data-text="brideShort">Rara</span></h1>
+            <p id="countdownStatus" class="countdown-status">Menuju hari bahagia</p>
+            <div class="countdown" aria-label="Countdown acara">
+              <div><strong id="cdDays">00</strong><span>Hari</span></div>
+              <div><strong id="cdHours">00</strong><span>Jam</span></div>
+              <div><strong id="cdMinutes">00</strong><span>Menit</span></div>
+              <div><strong id="cdSeconds">00</strong><span>Detik</span></div>
+            </div>
+            <div class="guest-box">
+              <span>Kepada</span>
+              <strong data-text="guestName">Budi dan Ani</strong>
+            </div>
+            <button id="openInvitationBtn" class="open-invitation" type="button">Buka Undangan</button>
+          </div>
+        </section>
+
+        <div id="inviteContent" class="invite-content">
+          <nav class="invite-nav" aria-label="Navigasi undangan">
+            <a href="#quoteSection">Ayat</a>
+            <a href="#coupleSection">Mempelai</a>
+            <a href="#eventSection">Acara</a>
+            <a href="#rsvpSection">RSVP</a>
+          </nav>
+
+          <section id="quoteSection" class="invite-section quote-section reveal">
+            <div class="ornament-line"></div>
+            <blockquote data-text="quoteText">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan agar kamu merasa tenteram kepadanya.</blockquote>
+            <cite data-text="quoteSource">QS. Ar-Rum : 21</cite>
+          </section>
+
+          <section id="storySection" class="invite-section reveal">
+            <div class="invite-heading">
+              <p>Kisah Cinta Kami</p>
+              <h2>Perjalanan Bersama</h2>
+            </div>
+            <div id="storyList" class="story-list"></div>
+          </section>
+
+          <section id="coupleSection" class="invite-section reveal">
+            <div class="invite-heading">
+              <p>Yang Berbahagia</p>
+              <h2>Mempelai</h2>
+            </div>
+            <div class="couple-list">
+              <article class="person-card">
+                <div class="person-avatar" data-avatar="groom">
+                  <img id="groomPhotoPreview" alt="Foto mempelai pria">
+                  <span data-text="groomInitial">A</span>
+                </div>
+                <p>Mempelai Pria</p>
+                <h3 data-text="groomShort">Adi</h3>
+                <strong data-text="groomFull">Adi Pratama</strong>
+                <span data-text="groomParents">Putra pertama dari Bapak Hendra dan Ibu Sari</span>
+              </article>
+              <div class="couple-and">&amp;</div>
+              <article class="person-card">
+                <div class="person-avatar" data-avatar="bride">
+                  <img id="bridePhotoPreview" alt="Foto mempelai wanita">
+                  <span data-text="brideInitial">R</span>
+                </div>
+                <p>Mempelai Wanita</p>
+                <h3 data-text="brideShort">Rara</h3>
+                <strong data-text="brideFull">Rara Aulia</strong>
+                <span data-text="brideParents">Putri pertama dari Bapak Ridwan dan Ibu Dewi</span>
+              </article>
+            </div>
+          </section>
+
+          <section id="eventSection" class="invite-section reveal">
+            <div class="invite-heading">
+              <p>Undangan Resmi</p>
+              <h2>Detail Acara</h2>
+            </div>
+            <div id="eventList" class="event-list"></div>
+          </section>
+
+          <section id="gallerySection" class="invite-section reveal">
+            <div class="invite-heading">
+              <p>Momen Berharga</p>
+              <h2>Galeri Foto</h2>
+            </div>
+            <div id="galleryList" class="gallery-list"></div>
+          </section>
+
+          <section id="rsvpSection" class="invite-section reveal">
+            <div class="invite-heading">
+              <p>Konfirmasi Kehadiran</p>
+              <h2>RSVP</h2>
+            </div>
+            <form id="rsvpForm" class="rsvp-form">
+              <label>Nama Lengkap<input type="text" name="name" placeholder="Masukkan nama Anda" required></label>
+              <label>Nomor WhatsApp<input type="tel" name="phone" placeholder="+62 xxx-xxxx-xxxx"></label>
+              <label>Konfirmasi Kehadiran
+                <select name="attendance" required>
+                  <option value="" disabled selected>Pilih jawaban</option>
+                  <option>Insya Allah Hadir</option>
+                  <option>Mohon Maaf, Tidak Hadir</option>
+                  <option>Belum Pasti</option>
+                </select>
+              </label>
+              <label>Doa dan Ucapan<textarea name="message" placeholder="Tuliskan doa terbaik untuk kami"></textarea></label>
+              <button class="btn btn-dark" type="submit">Kirim RSVP</button>
+            </form>
+            <div id="rsvpThanks" class="rsvp-thanks">Terima kasih. RSVP Anda sudah masuk ke preview.</div>
+          </section>
+
+          <section id="closingSection" class="invite-section closing-section reveal">
+            <p data-text="closingText">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak / Ibu / Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+            <h2><span data-text="groomShort">Adi</span> &amp; <span data-text="brideShort">Rara</span></h2>
+            <small data-text="closingFamily">Beserta keluarga besar</small>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="editModal" class="modal is-hidden" aria-hidden="true">
+    <button class="modal-backdrop" type="button" data-close-modal aria-label="Tutup editor"></button>
+    <form id="editForm" class="editor-panel">
+      <header class="editor-header">
+        <div>
+          <p class="eyebrow">Editor template</p>
+          <h2>Edit Data Undangan</h2>
+        </div>
+        <button class="close-button" type="button" data-close-modal aria-label="Tutup">X</button>
+      </header>
+
+      <div class="editor-body">
+        <section class="editor-group">
+          <h3>Data Mempelai</h3>
+          <label>Nama panggilan pria<input name="groomShort" type="text"></label>
+          <label>Nama lengkap pria<input name="groomFull" type="text"></label>
+          <label>Orang tua pria<textarea name="groomParents"></textarea></label>
+          <label>Nama panggilan wanita<input name="brideShort" type="text"></label>
+          <label>Nama lengkap wanita<input name="brideFull" type="text"></label>
+          <label>Orang tua wanita<textarea name="brideParents"></textarea></label>
+        </section>
+
+        <section class="editor-group">
+          <h3>Judul dan Font</h3>
+          <label>Judul undangan<input name="title" type="text"></label>
+          <label>Teks pembuka<input name="introText" type="text"></label>
+          <label>Font nama
+            <select name="nameFont">
+              <option value="'Cormorant Garamond', serif">Cormorant Garamond</option>
+              <option value="'Great Vibes', cursive">Great Vibes</option>
+              <option value="'Playfair Display', serif">Playfair Display</option>
+              <option value="'Libre Baskerville', serif">Libre Baskerville</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="editor-group">
+          <h3>Foto Mempelai dan Galeri</h3>
+          <label>Foto mempelai pria<input name="groomPhoto" type="file" accept="image/*"></label>
+          <label>Foto mempelai wanita<input name="bridePhoto" type="file" accept="image/*"></label>
+          <label>Foto galeri 1<input name="galleryPhoto1" type="file" accept="image/*" data-gallery-photo></label>
+          <label>Foto galeri 2<input name="galleryPhoto2" type="file" accept="image/*" data-gallery-photo></label>
+          <label>Foto galeri 3<input name="galleryPhoto3" type="file" accept="image/*" data-gallery-photo></label>
+          <label>Foto galeri 4<input name="galleryPhoto4" type="file" accept="image/*" data-gallery-photo></label>
+          <label>Foto galeri 5<input name="galleryPhoto5" type="file" accept="image/*" data-gallery-photo></label>
+          <p class="field-note">Foto yang dipilih akan tersimpan di browser untuk preview ini.</p>
+        </section>
+
+        <section class="editor-group">
+          <h3>Tanggal dan Acara</h3>
+          <label>Tanggal utama<input name="eventDate" type="datetime-local"></label>
+          <label>Teks tanggal<input name="displayDate" type="text"></label>
+          <label>Akad - waktu<input name="akadTime" type="text"></label>
+          <label>Akad - tempat<textarea name="akadVenue"></textarea></label>
+          <label>Resepsi - waktu<input name="receptionTime" type="text"></label>
+          <label>Resepsi - tempat<textarea name="receptionVenue"></textarea></label>
+        </section>
+
+        <section class="editor-group">
+          <h3>Tamu dan Link</h3>
+          <label>Nama tamu<input name="guestName" type="text"></label>
+          <label>Link tamu<input id="shareLinkInput" name="shareLink" type="text" readonly></label>
+          <button id="copyShareLinkBtn" class="btn btn-light" type="button">Salin Link</button>
+        </section>
+      </div>
+
+      <footer class="editor-actions">
+        <button id="resetDataBtn" class="btn btn-light" type="button">Reset Data</button>
+        <button class="btn btn-dark" type="submit">Simpan Perubahan</button>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>
